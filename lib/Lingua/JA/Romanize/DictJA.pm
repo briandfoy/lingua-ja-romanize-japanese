@@ -66,20 +66,11 @@ my $DICT_DB     = 'Japanese.bdb';
 my $DIC_SMALL   = [ qw(
     skk/SKK-JISYO.S
 ) ];
-my $DIC_LARGE = [ qw(
-    http://openlab.jp/skk/skk/dic/SKK-JISYO.L
-    http://openlab.jp/skk/skk/dic/SKK-JISYO.jinmei
-    http://openlab.jp/skk/skk/dic/SKK-JISYO.propernoun
-    http://openlab.jp/skk/skk/dic/SKK-JISYO.geo
-    http://openlab.jp/skk/skk/dic/SKK-JISYO.station
+my $Base = 'http://openlab.jp/skk/skk/dic/SKK-JISYO.';
+my $DIC_LARGE = [ map { "$Base$_" } qw(
+	L jinmei propernoun geo station
 ) ];
-my $DIC_GZIPED = [ qw(
-    http://openlab.jp/skk/dic/SKK-JISYO.L.gz
-    http://openlab.jp/skk/dic/SKK-JISYO.jinmei.gz
-    http://openlab.jp/skk/dic/SKK-JISYO.propernoun.gz
-    http://openlab.jp/skk/dic/SKK-JISYO.geo.gz
-    http://openlab.jp/skk/dic/SKK-JISYO.station.gz
-) ];
+my $DIC_GZIPED = [ map { "$_.gz" } @$DIC_LARGE ];
 
 # ----------------------------------------------------------------
 sub update {
