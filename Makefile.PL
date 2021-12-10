@@ -8,6 +8,7 @@ my $opt = {
         'Test::More'        =>  '0',
         'DB_File'           =>  '0',
         'LWP::UserAgent'    =>  '0',
+        'LWP::Protocol::https' => '0',
     },
 };
 

@@ -66,7 +66,7 @@ my $DICT_DB     = 'Japanese.bdb';
 my $DIC_SMALL   = [ qw(
     skk/SKK-JISYO.S
 ) ];
-my $Base = 'http://openlab.jp/skk/skk/dic/SKK-JISYO.';
+my $Base = 'https://github.com/skk-dev/dict/raw/master/SKK-JISYO.';
 my $DIC_LARGE = [ map { "$Base$_" } qw(
 	L jinmei propernoun geo station
 ) ];
@@ -118,7 +118,7 @@ sub update {
 
     my $diclist = $DIC_SMALL;    # default dictionary
     print "External dictionaries:\n";
-    my $cand = defined $IO::Zlib::VERSION ? $DIC_GZIPED : $DIC_LARGE;
+    my $cand = $DIC_LARGE;
     print "\t", $_, "\n" foreach (@$cand);
     my $mess = 'Do you wish to download these files?';
     my $yes = ExtUtils::MakeMaker::prompt( $mess, 'y' );
@@ -190,7 +190,7 @@ sub read_skk_jisyo {
     local $| = 1;
     my $cnt = 0;
 
-    if ( $jisyo =~ m#^http://# ) {
+    if ( $jisyo =~ m#^https?://# ) {
         my $name = ( $jisyo =~ m#([^/]+)$# )[0];
         my $cache = "$FETCH_CACHE/$name";
         if ( -r $cache ) {
