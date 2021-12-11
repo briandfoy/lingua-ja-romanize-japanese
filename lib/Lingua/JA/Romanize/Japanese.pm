@@ -78,7 +78,7 @@ http://www.kawa.net/works/perl/romanize/romanize-e.html
 
 http://linuga-romanize.googlecode.com/svn/trunk/Lingua-JA-Romanize-Japanese/
 
-http://openlab.jp/skk/
+https://github.com/skk-dev/dict
 
 =head1 AUTHOR
 

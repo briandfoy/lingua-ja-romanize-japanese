@@ -13,15 +13,15 @@ L<Lingua::JA::Romanize::Japanese> module.
 
 Source dictionary file per default: (included in this package)
 
-    http://openlab.jp/skk/skk/dic/SKK-JISYO.S
+    https://github.com/skk-dev/dict/SKK-JISYO.S
 
 Optional/external dictionary files:
 
-    http://openlab.jp/skk/dic/SKK-JISYO.L.gz
-    http://openlab.jp/skk/dic/SKK-JISYO.jinmei.gz
-    http://openlab.jp/skk/dic/SKK-JISYO.geo.gz
-    http://openlab.jp/skk/dic/SKK-JISYO.station.gz
-    http://openlab.jp/skk/dic/SKK-JISYO.propernoun.gz
+    https://github.com/skk-dev/dict/SKK-JISYO.L
+    https://github.com/skk-dev/dict/SKK-JISYO.jinmei
+    https://github.com/skk-dev/dict/SKK-JISYO.geo
+    https://github.com/skk-dev/dict/SKK-JISYO.station
+    https://github.com/skk-dev/dict/SKK-JISYO.propernoun
 
 Cached dictionary files:
 

@@ -10,7 +10,7 @@ doit () {
 }
 
 dic=skk/SKK-JISYO.S
-doit wget -O $dic~ http://openlab.jp/skk/skk/dic/SKK-JISYO.S
+doit wget -O $dic~ https://github.com/skk-dev/dict/SKK-JISYO.S
 diff $dic $dic~ > /dev/null || doit /bin/mv -f $dic~ $dic
 /bin/rm -f $dic~
 
