@@ -63,7 +63,7 @@ L<Lingua::JA::Romanize::Japanese>
 =head1 COPYRIGHT AND LICENSE
 
 Copyright (c) 2006-2008 Yusuke Kawasaki. All rights reserved.
-This program is free software; you can redistribute it and/or 
+This program is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
 
 =cut
@@ -72,7 +72,7 @@ package Lingua::JA::Romanize::Kana;
 use strict;
 use base qw( Lingua::JA::Romanize::Base );
 use vars qw( $VERSION );
-$VERSION = "0.22";
+$VERSION = "0.231";
 my $PERL581 = 1 if ( $] >= 5.008001 );
 
 my $KANA_MAP = [

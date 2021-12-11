@@ -54,7 +54,7 @@ modify it under the same terms as Perl itself.
 package Lingua::JA::Romanize::DictJA;
 use strict;
 use vars qw( $VERSION );
-$VERSION = "0.23";
+$VERSION = "0.231";
 use Lingua::JA::Romanize::Kana;
 use ExtUtils::MakeMaker;
 use Fcntl;

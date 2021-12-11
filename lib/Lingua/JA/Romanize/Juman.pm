@@ -36,7 +36,7 @@ http://nlp.kuee.kyoto-u.ac.jp/nl-resource/juman.html (Japanese)
 =head1 COPYRIGHT AND LICENSE
 
 Copyright (c) 2006-2008 Yusuke Kawasaki. All rights reserved.
-This program is free software; you can redistribute it and/or 
+This program is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself.
 
 =cut
@@ -47,7 +47,7 @@ use Carp;
 use Juman;
 use base qw( Lingua::JA::Romanize::Base );
 use vars qw( $VERSION );
-$VERSION = "0.20";
+$VERSION = "0.231";
 my $JUMAN_ENCODE = 'EUC-JP';
 my $JUMAN_JCODE  = 'euc';
 

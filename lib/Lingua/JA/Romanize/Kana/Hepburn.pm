@@ -43,7 +43,7 @@ require 5.008;
 use base qw( Lingua::JA::Romanize::Kana );
 use Lingua::JA::Hepburn::Passport;
 use vars qw( $VERSION );
-$VERSION = "0.20";
+$VERSION = "0.231";
 
 # ----------------------------------------------------------------
 
