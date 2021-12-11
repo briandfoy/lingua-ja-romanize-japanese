@@ -4,3 +4,4 @@ Makefile
 skk/
 pm_to_blib
 lib/Lingua/JA/Romanize/Japanese.bdb
+Makefile.old
