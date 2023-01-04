@@ -63,6 +63,14 @@ jobs:
             - uses: actions/checkout@v3
             - name: Platform check
               run: uname -a
+            - name: Berkeley DB
+              run: |
+                 wget http://download.oracle.com/berkeley-db/db-5.1.29.tar.gz
+                 tar xvfz db-5.1.29.tar.gz
+                 cd db-5.1.29/build_unix
+                 ../dist/configure --prefix=/usr/local/
+                 make install
+                 cd ../..
             - name: Perl version check
               run: |
                 perl -V
